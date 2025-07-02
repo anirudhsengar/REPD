@@ -8,7 +8,8 @@ Created on Thu Apr 19 14:06:01 2018
 
 import os
 #
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import math
 #
 from general_utility import canTFUseGPU
